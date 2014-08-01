@@ -5,13 +5,12 @@
 \alias{resample.holdout}
 \title{Resampling schemes}
 \usage{
-resample(method, y, ..., subset)
+resample(method, y, ..., subset = TRUE)
 
 resample.holdout(y = NULL, frac = 0.5, nfold = 5,
-  balanced = is.factor(y), subset = TRUE)
+  balanced = is.factor(y), subset)
 
-resample.crossval(y, nfold = 5, nrep = 5, balanced = is.factor(y),
-  subset = TRUE)
+resample.crossval(y, nfold = 5, nrep = 5, balanced = is.factor(y), subset)
 }
 \arguments{
 \item{method}{The resampling method to use, e.g. \code{"holdout"} or

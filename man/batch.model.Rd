@@ -28,7 +28,13 @@ into fitting and test subsets.}
 \item{.save}{What aspects of the modeling to perform and return to the
 user.}
 
-\item{.parallel.cores}{Number of CPU-cores to use for parallel computation.}
+\item{.parallel.cores}{Number of CPU-cores to use for parallel computation.
+The current implementation is based on \code{\link{mcMap}}, which
+unfortunatelly do not work on Windows systems. It can however be
+re-implemented by the user fairly easily by setting up a PSOCK cluster and
+calling \code{\link{parLapply}} as in the example below. This solution
+might be included in future versions of the package, after further
+investigation.}
 
 \item{.checkpoint.dir}{Directory to save intermediate results to. If set
 the computation can be restarted with minimal loss of results.}
@@ -63,6 +69,21 @@ variable importance scores.
 Note that the typical user does not have to call this function
 directly, but should use \code{\link{fit}}, \code{\link{tune}} or
 \code{\link{evaluate.modeling}} instead.
+}
+\examples{
+x <- iris[-5]
+y <- iris$Species
+proc <- modeling.procedure("lda")
+cv <- resample("crossval", y, 4, 4)
+perf <- batch.model(proc, x, y, cv, .save=list(pred=TRUE))
+
+# Parallelization on windows
+require(parallel)
+cl <- makePSOCKcluster(2)
+clusterEvalQ(cl, library(emil))
+clusterExport(cl, c("proc", "x", "y"))
+perf <- parLapply(cl, cv, function(fold)
+    batch.model(proc, x, y, resample=fold))
 }
 \author{
 Christofer \enc{Bäcklin}{Backlin}
