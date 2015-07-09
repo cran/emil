@@ -2,9 +2,15 @@
 % Please edit documentation in R/glmnet.r
 \name{predict_glmnet}
 \alias{predict_glmnet}
+\alias{predict_lasso}
+\alias{predict_ridge_regression}
 \title{Predict using generalized linear model with elastic net regularization}
 \usage{
 predict_glmnet(object, x, s, ...)
+
+predict_ridge_regression(object, x, s, ...)
+
+predict_lasso(object, x, s, ...)
 }
 \arguments{
 \item{object}{Fitted model.}
@@ -16,10 +22,13 @@ predict_glmnet(object, x, s, ...)
 \item{...}{Sent to \code{\link[glmnet]{predict.glmnet}}.}
 }
 \value{
-A list with elements:
-\itemize{
-    \item{\code{prediction}: Factor of predicted class memberships.}
-    \item{\code{probability}: Data frame of predicted class probabilities.}
+A list with a subset of the following elements:
+\describe{
+    \item{\code{prediction}}{The response of the modeling problem, i.e. a
+        factor for classification, problems, a numeric for regressions, and a
+        relative risk for survival analyses.}
+    \item{\code{probability}}{Data frame of predicted class probabilities.}
+    \item{\code{link}}{Link function values.}
 }
 }
 \description{
@@ -31,6 +40,6 @@ Christofer \enc{Bäcklin}{Backlin}
 }
 \seealso{
 \code{\link{emil}}, \code{\link{fit_glmnet}},
-  \code{\link{modeling_procedure}}
+  \code{\link{importance_glmnet}}, \code{\link{modeling_procedure}}
 }
 

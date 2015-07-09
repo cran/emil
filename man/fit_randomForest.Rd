@@ -4,16 +4,12 @@
 \alias{fit_randomForest}
 \title{Fit random forest.}
 \usage{
-fit_randomForest(x, y, prediction = FALSE, ...)
+fit_randomForest(x, y, ...)
 }
 \arguments{
 \item{x}{Dataset, numerical matrix with observations as rows.}
 
 \item{y}{Class labels, factor.}
-
-\item{prediction}{Whether to calculate permuted OOB error as a feature
-prediction measure, see \code{\link[randomForest]{predict.randomForest}}.
-Set to \code{FALSE} to speed up computation.}
 
 \item{...}{Sent to \code{\link[randomForest]{randomForest}}.}
 }
@@ -21,7 +17,7 @@ Set to \code{FALSE} to speed up computation.}
 Fitted random forest.
 }
 \description{
-Directly calling the \code{randomForest} package implementation. See
+Directly calling the \pkg{randomForest} package implementation. See
 \code{\link[randomForest]{randomForest}} for parameter specification.
 }
 \author{

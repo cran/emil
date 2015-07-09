@@ -2,9 +2,15 @@
 % Please edit documentation in R/glmnet.r
 \name{fit_glmnet}
 \alias{fit_glmnet}
-\title{Fit GLM with LASSO, Ridge or elastic net regularization.}
+\alias{fit_lasso}
+\alias{fit_ridge_regression}
+\title{Fit elastic net, LASSO or ridge regression model}
 \usage{
 fit_glmnet(x, y, family, nfolds, foldid, alpha = 1, lambda = NULL, ...)
+
+fit_ridge_regression(...)
+
+fit_lasso(...)
 }
 \arguments{
 \item{x}{Dataset.}
@@ -23,14 +29,13 @@ different problems, see \code{\link[glmnet]{glmnet}}.}
 
 \item{lambda}{Regularization parameter, see \code{\link[glmnet]{glmnet}}.}
 
-\item{...}{Sent to \code{\link[glmnet]{cv.glmnet}}.}
+\item{...}{Sent to \code{\link{fit_glmnet}} or \code{\link[glmnet]{cv.glmnet}}.}
 }
 \value{
-Fitted GLM.
+Fitted elastic net model.
 }
 \description{
-Fits generalized linear models with regularization using the \code{glmnet}
-package implementation.
+Using the \pkg{glmnet} package implementation.
 }
 \details{
 The \code{alpha} parameter of \code{\link[glmnet]{glmnet}} controls the type of
@@ -45,6 +50,6 @@ Christofer \enc{Bäcklin}{Backlin}
 }
 \seealso{
 \code{\link{emil}}, \code{\link{predict_glmnet}},
-  \code{\link{modeling_procedure}}
+  \code{\link{importance_glmnet}}, \code{\link{modeling_procedure}}
 }
 

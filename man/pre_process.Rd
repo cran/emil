@@ -15,7 +15,7 @@
 \usage{
 pre_split(x, y, fold)
 
-pre_convert(data, x_fun, y_fun)
+pre_convert(data, x_fun, y_fun, ...)
 
 pre_transpose(data)
 
@@ -29,7 +29,7 @@ pre_remove_constant(data)
 
 pre_remove_correlated(data, cutoff)
 
-pre_pca(data)
+pre_pca(data, ncomponent, scale. = TRUE, ...)
 }
 \arguments{
 \item{x}{Dataset.}
@@ -50,6 +50,8 @@ and testing sets.}
 \item{y_fun}{Function to be applied to the response of the training and test
 sets (independently).}
 
+\item{...}{Sent to internal methods, see the code of each function.}
+
 \item{feature}{The features to be removed. Can be integer, logical or
 character.}
 
@@ -59,6 +61,11 @@ ignored.}
 \item{center}{Whether to center the data before scaling.}
 
 \item{cutoff}{See \code{\link[caret]{findCorrelation}}.}
+
+\item{ncomponent}{Number of PCA components to use. Missing all components
+are used.}
+
+\item{scale.}{Sent to \code{\link{prcomp}}.}
 }
 \value{
 A list with the following components
@@ -84,7 +91,7 @@ When supplied to \code{\link{evaluate}}, pre-processing functions can be
 chained (i.e. executed sequentially) after an initating call to
 \code{\link{pre_split}}.
 This can either be done using the \code{\link[=chain]{pipe operator}} defined
-in the magrittr package or by putting all pre-processing functions in a
+in the \pkg{magrittr} package or by putting all pre-processing functions in a
 regular list (see the examples).
 
 Note that all transformations are defined based on the fitting data only
@@ -102,7 +109,7 @@ See the code of \code{\link{impute_median}} for an example.
 x <- as.matrix(iris[-5])
 x[sample(600, 6)] <- NA
 y <- iris$Species
-cv <- resample("crossvalidation", y, nreplicate=3, nfold=4)
+cv <- resample("crossvalidation", y, nrepeat=3, nfold=4)
 procedure <- modeling_procedure("lda")
 
 # Simple dataset splitting

@@ -4,7 +4,7 @@
 \alias{subresample}
 \title{Generate resampling subschemes}
 \usage{
-subresample(fold, y = length(fold))
+subresample(fold, y)
 }
 \arguments{
 \item{fold}{A resampling scheme or fold to use to define the sub scheme(s).}
@@ -17,13 +17,13 @@ A resampling scheme.
 }
 \description{
 A subscheme is a resampling scheme that only includes observations in the
-training set of an original scheme. This function
-automatically fetches the type and parameters of the prototype and use them
-to generate the subscheme.
+training set of a fold. This function
+automatically fetches the type and parameters of the prototype fold and use
+them to generate the subscheme.
 }
 \examples{
-cv <- resample("holdout", y=12, fraction=1/4, nfold=3)
-inner.cv <- subresample(cv, y=12)
+cv <- resample("holdout", y=1:12, test_fraction=1/4, nfold=3)
+inner.cv <- subresample(cv, y=1:12)
 }
 \author{
 Christofer \enc{Bäcklin}{Backlin}

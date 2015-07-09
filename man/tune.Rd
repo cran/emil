@@ -7,7 +7,7 @@
 \alias{tune}
 \title{Tune parameters of modeling procedures}
 \usage{
-tune(procedure, ..., .verbose = FALSE)
+tune(procedure, ..., .verbose = getOption("emil_verbose", FALSE))
 
 is_tuned(procedure)
 

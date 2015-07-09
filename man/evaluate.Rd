@@ -2,12 +2,12 @@
 % Please edit documentation in R/modeling.r
 \name{evaluate}
 \alias{evaluate}
-\title{Perform modeling}
+\title{Evaluate a modeling procedure}
 \usage{
-evaluate(procedure, x, y, resample = emil::resample("crossvalidation", y,
-  nfold = 2, nreplicate = 2), pre_process = pre_split, .save = c(model =
-  TRUE, prediction = TRUE, importance = FALSE), .cores = 1,
-  .checkpoint_dir = NULL, .return_error = .cores > 1, .verbose = TRUE)
+evaluate(procedure, x, y, resample, pre_process = pre_split, .save = c(model
+  = TRUE, prediction = TRUE, error = TRUE, importance = FALSE), .cores = 1,
+  .checkpoint_dir = NULL, .return_error = .cores > 1,
+  .verbose = getOption("emil_verbose", TRUE))
 }
 \arguments{
 \item{procedure}{Modeling procedure, or list of modeling procedures, as
@@ -45,8 +45,7 @@ but not recursively.}
 error. If \code{TRUE} the modeling of the particular fold is aborted and
 the error message is returned instead of its results.}
 
-\item{.verbose}{Whether to print an activity log. Set to \code{-1} to
-also suppress output generated from the procedure's functions.}
+\item{.verbose}{Whether to print an activity log.}
 }
 \value{
 A list tree where the top level corresponds to folds (in case of
@@ -69,37 +68,29 @@ This function performs the important task of evaluating the performance of
 a modeling procedure with resampling, including tuning and pre-processing
 to not bias the results by information leakage.
 }
-\details{
-This function is the core of the framework, carrying out most of the work.
-It fits and evaluates models according to a resampling scheme, and extracts
-feature importance scores.
-}
 \examples{
 x <- iris[-5]
 y <- iris$Species
-procedure <- modeling_procedure("lda")
-cv <- resample("crossvalidation", y, 4, 4)
-result <- evaluate(procedure, x, y, resample=cv)
+cv <- resample("crossvalidation", y, nfold = 4, nrepeat = 4)
+result <- evaluate("lda", x, y, resample=cv)
 
 # Multiple procedures fitted and tested simultaneously. 
 # This is useful when the dataset is large and the splitting takes a long time.
 # If you name the elements of the list emil will also name the elements of the
 # results object in the same way.
-double_procedure <- list(Linear = modeling_procedure("lda"),
-                         Quadratic = modeling_procedure("qda"))
-result <- evaluate(double_procedure, x, y, resample=cv)
+result <- evaluate(c(Linear = "lda", Quadratic = "qda"), x, y, resample=cv)
 
 # Multicore parallelization (on a single computer)
-result <- evaluate(procedure, x, y, resample=cv, .cores=2)
+result <- evaluate("lda", x, y, resample=cv, .cores=2)
 
 # Parallelization using a cluster (not limited to a single computer)
 # PSOCK is supported on windows too!
 require(parallel)
 cl <- makePSOCKcluster(2)
 clusterEvalQ(cl, library(emil))
-clusterExport(cl, c("procedure", "x", "y"))
+clusterExport(cl, c("x", "y"))
 result <- parLapply(cl, cv, function(fold)
-    evaluate(procedure, x, y, resample=fold))
+    evaluate("lda", x, y, resample=fold))
 
 }
 \author{

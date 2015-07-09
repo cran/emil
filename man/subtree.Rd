@@ -36,7 +36,7 @@ Modeling results produced by \code{\link{evaluate}} comes in the
 form of nested lists. This function can be used to subset or rearrange parts
 of the results into vectors, matrices or data frames.
 Also note the \code{\link[emil]{select}} function that provides an extension
-to the \code{dplyr} package for data manipulation.
+to the \pkg{dplyr} package for data manipulation.
 }
 \details{
 This function can only be used to extract data, not to assign.

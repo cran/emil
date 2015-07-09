@@ -23,8 +23,8 @@ model <- fit(procedure, x=iris[-5], y=iris$Species)
 get_tuning(model)
 
 options(emil_max_indent=4)
-cv <- resample("holdout", iris$Species, nfold=5)
-result <- evaluate(procedure, iris[-5], iris$Species, resample=cv,
+ho <- resample("holdout", iris$Species, nfold=5)
+result <- evaluate(procedure, iris[-5], iris$Species, resample=ho,
                    .save=c(model=TRUE))
 get_tuning(result)
 }

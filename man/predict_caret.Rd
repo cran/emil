@@ -2,17 +2,21 @@
 % Please edit documentation in R/caret.r
 \name{predict_caret}
 \alias{predict_caret}
-\title{Predict using a caret method}
+\title{Predict using a \pkg{caret} method}
 \usage{
-predict_caret(...)
+predict_caret(object, x, ...)
 }
 \arguments{
+\item{object}{Fitted caret model.}
+
+\item{x}{New data to predict the response of.}
+
 \item{...}{Sent to \code{\link{predict}} that forwards it to the
-appropriate predict function in the caret package.}
+appropriate predict function in the \pkg{caret} package.}
 }
 \description{
-This is not guaranteed to work with all caret methods. If it doesn't work
-for a particular method, the user will need to rewrite it.
+This is not guaranteed to work with all \pkg{caret} methods. If it doesn't
+work for a particular method, the user will need to rewrite it.
 }
 \author{
 Christofer \enc{Bäcklin}{Backlin}

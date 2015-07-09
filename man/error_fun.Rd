@@ -9,21 +9,32 @@
 \alias{rmse}
 \title{Performance estimation functions}
 \usage{
-error_rate(truth, prediction)
+error_rate(truth, prediction, allow_rejection = !missing(rejection_cost),
+  rejection_cost)
 
 neg_auc(truth, prediction)
 
-rmse(truth, prediction)
+rmse(truth, prediction, na.rm = FALSE)
 
-mse(truth, prediction)
+mse(truth, prediction, na.rm = FALSE)
 
-neg_harrell_c(truth, prediction)
+neg_harrell_c(truth, prediction, na.rm = FALSE)
 }
 \arguments{
 \item{truth}{The true response values, be it class labels, numeric values or
 survival outcomes.}
 
 \item{prediction}{A prediction object.}
+
+\item{allow_rejection}{If \code{FALSE} missing prediction values will produce
+an error. If \code{TRUE} missing values will be given a cost specified by
+the \code{rejection_cost} argument.}
+
+\item{rejection_cost}{See the argument \code{allow_rejection}. If missing a
+rejection cost equivalent to the error rate obtained when assigning all
+test observations to the most common class will be used.}
+
+\item{na.rm}{Whether to remove missing values or not.}
 }
 \description{
 These functions determine the performance of fitted model based on its
@@ -50,7 +61,7 @@ types could be if the prediction function produce class probabilities for
 all classes rather than one label, or the risks that the observations will
 experience the event of interest, to be compared to the actual outcome that
 it did occur or has not yet occurred at a specific time point.
-See neg_harrell_c for an example of the latter.
+See \code{\link{neg_harrell_c}} for an example of the latter.
 }
 \author{
 Christofer \enc{Bäcklin}{Backlin}

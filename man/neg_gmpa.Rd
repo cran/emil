@@ -4,12 +4,14 @@
 \alias{neg_gmpa}
 \title{Negative geometric mean of class specific predictive accuracy}
 \usage{
-neg_gmpa(truth, prediction)
+neg_gmpa(truth, prediction, na.rm = FALSE)
 }
 \arguments{
 \item{truth}{See \code{\link{error_fun}}.}
 
 \item{prediction}{See \code{\link{error_fun}}.}
+
+\item{na.rm}{Whether to remove missing values or not.}
 }
 \value{
 A numeric scalar.

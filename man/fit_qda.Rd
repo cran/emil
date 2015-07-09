@@ -17,7 +17,7 @@ fit_qda(x, y, ...)
 Fitted QDA.
 }
 \description{
-Wrapper for the MASS package implementation.
+Wrapper for the \pkg{MASS} package implementation.
 }
 \author{
 Christofer \enc{Bäcklin}{Backlin}

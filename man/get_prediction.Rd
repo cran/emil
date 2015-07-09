@@ -4,13 +4,17 @@
 \alias{get_prediction}
 \title{Extract predictions from modeling results}
 \usage{
-get_prediction(result, resample, format = c("long", "wide"))
+get_prediction(result, resample, type = "prediction", format = c("long",
+  "wide"))
 }
 \arguments{
 \item{result}{Modeling result, as returned by \code{\link{evaluate}} and
 \code{\link{evaluate}}.}
 
 \item{resample}{Resampling scheme used to create the results.}
+
+\item{type}{The type of prediction to return. The possible types vary between
+modeling procedure.}
 
 \item{format}{Table format of the output. See
 \url{http://en.wikipedia.org/wiki/Wide_and_narrow_data} for more info.}

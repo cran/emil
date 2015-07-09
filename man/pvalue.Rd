@@ -18,7 +18,7 @@ p-value.
 }
 \description{
 These calculations are written in such a way that they avoid rounding off errors
-that plague the \code{survival} and \code{cmprsk} packages.
+that plague the \pkg{survival} and \pkg{cmprsk} packages.
 }
 \author{
 Christofer \enc{Bäcklin}{Backlin}

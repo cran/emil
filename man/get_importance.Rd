@@ -23,17 +23,17 @@ Note that different methods calculates feature importance in different
 ways and that they are not directly comparable.
 }
 \details{
-When extending the emil framework with your own method, the importance
+When extending the \pkg{emil} framework with your own method, the importance
 function should return a data frame where one column is called "feature" and
 the remaining columns are named after the classes.
 }
 \examples{
 procedure <- modeling_procedure("pamr")
-model <- fit(procedure, x=iris[-5], y=iris$Species)
+model <- fit("pamr", x=iris[-5], y=iris$Species)
 get_importance(model)
 
-cv <- resample("crossvalidation", iris$Species, nreplicate=2, nfold=3)
-result <- evaluate(procedure, iris[-5], iris$Species, resample=cv,
+cv <- resample("crossvalidation", iris$Species, nrepeat=2, nfold=3)
+result <- evaluate("pamr", iris[-5], iris$Species, resample=cv,
                    .save=c(importance=TRUE))
 get_importance(result)
 }

@@ -17,7 +17,7 @@ fit_lda(x, y, ...)
 Fitted linear discriminant.
 }
 \description{
-Wrapper for the MASS package implementation.
+Wrapper for the \pkg{MASS} package implementation.
 }
 \author{
 Christofer \enc{Bäcklin}{Backlin}

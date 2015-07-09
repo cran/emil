@@ -3,7 +3,7 @@
 \name{select_.list}
 \alias{select_.list}
 \alias{select_.modeling_result}
-\title{emil and dplyr integration}
+\title{\pkg{emil} and \pkg{dplyr} integration}
 \usage{
 \method{select_}{list}(.data, ..., .dots)
 
@@ -42,7 +42,7 @@ A \code{\link{data.frame}} in long format.
 }
 \description{
 Modeling results can be converted to tabular format and manipulated using
-dplyr and other Hadleyverse packages. This is accomplished by a class
+\pkg{dplyr} and other Hadleyverse packages. This is accomplished by a class
 specific \code{\link[dplyr]{select_}} function that differs somewhat in syntax
 from the default \code{\link[dplyr]{select_}}.
 }
@@ -51,7 +51,7 @@ from the default \code{\link[dplyr]{select_}}.
 x <- iris[-5]
 y <- iris$Species
 names(y) <- sprintf("orchid\%03i", seq_along(y))
-cv <- resample("crossvalidation", y, nfold=3, nreplicate=2)
+cv <- resample("crossvalidation", y, nfold=3, nrepeat=2)
 procedures <- list(nsc = modeling_procedure("pamr"),
                    rf = modeling_procedure("randomForest"))
 result <- evaluate(procedures, x, y, resample=cv)

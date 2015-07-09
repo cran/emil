@@ -4,7 +4,7 @@
 \alias{fit}
 \title{Fit a model}
 \usage{
-fit(procedure, x, y, ..., .verbose = TRUE)
+fit(procedure, x, y, ..., .verbose = getOption("emil_verbose", FALSE))
 }
 \arguments{
 \item{procedure}{Modeling procedure, or list of modeling procedures, as
@@ -28,8 +28,7 @@ Fits a model according to a modeling procedure. If the procedure contains
 untuned parameters they will automatically be tuned prior to fitting.
 }
 \examples{
-procedure <- modeling_procedure("lda")
-mod <- fit(procedure, x=iris[-5], y=iris$Species)
+mod <- fit("lda", x=iris[-5], y=iris$Species)
 }
 \author{
 Christofer \enc{Bäcklin}{Backlin}

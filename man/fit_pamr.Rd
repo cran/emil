@@ -4,9 +4,8 @@
 \alias{fit_pamr}
 \title{Fit nearest shrunken centroids model.}
 \usage{
-fit_pamr(x, y, error_fun, cv, threshold = NULL, ...,
-  thres_fun = function(thr, err) median(thr[err == min(err)]),
-  slim.fit = FALSE)
+fit_pamr(x, y, error_fun, cv, nfold, threshold = NULL, ...,
+  thres_fun = function(thr, err) median(thr[err == min(err)]), slim = FALSE)
 }
 \arguments{
 \item{x}{Dataset, numerical matrix with observations as rows.}
@@ -20,9 +19,11 @@ be supplied on one of the following forms:
 \itemize{
   \item{Resampling scheme produced with \code{\link{resample}}
     or \code{\link{resample_holdout}}.}
-  \item{List with elements named \code{nreplicate} and \code{nfold}}
+  \item{List with elements named \code{nrepeat} and \code{nfold}}
   \item{\code{NA}, \code{NULL} or \code{FALSE} to suppress shrinkage tuning.}
 }}
+
+\item{nfold}{Sent to \code{\link[pamr]{pamr.cv}}. Only used if \code{cv} is missing.}
 
 \item{threshold}{Shrinkage thresholds to try (referred to as 'lambda' in the
 literature). Chosen and tuned automatically by default, but must be given
@@ -34,7 +35,7 @@ it with \code{\link{evaluate}}.}
 \item{thres_fun}{Threshold selection function. Note that it is not uncommon
 that several thresholds will result in the same tuning error.}
 
-\item{slim.fit}{Set to \code{TRUE} if you want to return the fitted
+\item{slim}{Set to \code{TRUE} if you want to return the fitted
 classifier but discard pamr's \code{cv.objects}, which can be large.
 memory efficient. This means that the element \code{cv$cv.objects}
 containing the cross-validated fits will be dropped from the returned
@@ -44,7 +45,7 @@ classifier.}
 Fitted pamr classifier.
 }
 \description{
-Wrapped version of the \code{pamr} package implementation. Note that
+Wrapped version of the \pkg{pamr} package implementation. Note that
 this function uses internal cross-validation for determining the value
 of the shrinkage threshold.
 }

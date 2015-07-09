@@ -2,7 +2,7 @@
 % Please edit documentation in R/caret.r
 \name{fit_caret}
 \alias{fit_caret}
-\title{Fit a model using the caret package}
+\title{Fit a model using the \pkg{caret} package}
 \usage{
 fit_caret(x, y, ...)
 }
@@ -14,7 +14,7 @@ fit_caret(x, y, ...)
 \item{...}{Sent to \code{\link[caret]{train}}.}
 }
 \description{
-Fit a model using the caret package
+Fit a model using the \pkg{caret} package
 }
 \author{
 Christofer \enc{Bäcklin}{Backlin}

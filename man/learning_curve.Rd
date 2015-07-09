@@ -4,7 +4,8 @@
 \alias{learning_curve}
 \title{Learning curve analysis}
 \usage{
-learning_curve(procedure, x, y, fraction, nfold = 100, ..., .verbose = TRUE)
+learning_curve(procedure, x, y, test_fraction, nfold = 100, ...,
+  .verbose = TRUE)
 }
 \arguments{
 \item{procedure}{\code{\link{modeling_procedure}}.}
@@ -13,7 +14,7 @@ learning_curve(procedure, x, y, fraction, nfold = 100, ..., .verbose = TRUE)
 
 \item{y}{Response.}
 
-\item{fraction}{Fraction of dataset to hold out, i.e. use as test set. Defaults
+\item{test_fraction}{Fraction of dataset to hold out, i.e. use as test set. Defaults
 20 logarithmically distributed values ranging from all but 5 observations
 per class in the largest test set to only 5 observations per class in
 the smallest test set.}
@@ -26,15 +27,15 @@ the smallest test set.}
 also suppress output generated from the procedure's functions.}
 }
 \description{
-This function studies the change in permformance as the sizes of the fitting
-and test sets are varied. In case the studied modeling procedures cannot
-produce models on the smallest fitting sets, please use
+This function studies the change in permformance as the sizes of the training
+set is varied. In case the studied modeling procedures cannot
+produce models on the smallest training sets, please use
 \code{.return_error=TRUE} (see \code{\link{evaluate}}.
 }
 \examples{
-procedure <- lapply(c(Linear="lda", Quadratic="qda"), modeling_procedure)
 options(emil_max_indent=3)
-lc <- learning_curve(procedure, iris[-5], iris$Species, fraction=7:1/10)
+lc <- learning_curve(c(Linear="lda", Quadratic="qda"),
+                     iris[-5], iris$Species, test_fraction=7:2/10)
 plot(lc)
 }
 \author{

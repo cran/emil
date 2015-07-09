@@ -13,8 +13,7 @@
 
 \item{...}{Sent to the procedure's prediction function.}
 
-\item{.verbose}{Whether to print an activity log. Set to \code{-1} to
-suppress all messages.}
+\item{.verbose}{Whether to print an activity log.}
 }
 \value{
 See the documentation of procedure's method.
@@ -23,8 +22,7 @@ See the documentation of procedure's method.
 Predict the response of unknown observations
 }
 \examples{
-procedure <- modeling_procedure("lda")
-mod <- fit(procedure, x=iris[-5], y=iris$Species)
+mod <- fit("lda", x=iris[-5], y=iris$Species)
 prediction <- predict(mod, iris[-5])
 }
 \author{
