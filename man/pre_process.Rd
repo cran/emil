@@ -25,7 +25,7 @@ pre_center(data, y = FALSE, na.rm = TRUE)
 
 pre_scale(data, y = FALSE, na.rm = TRUE, center = TRUE)
 
-pre_remove_constant(data)
+pre_remove_constant(data, na.rm = TRUE)
 
 pre_remove_correlated(data, cutoff)
 
@@ -72,8 +72,8 @@ A list with the following components
 \describe{
     \item{\code{fit}}{Fitting set.}
     \item{\code{test}}{Test set.}
-    \item{\code{feature_selection}}{Logical vector indicating which features were kept
-        (TRUE) and discarded (FALSE).}
+    \item{\code{feature_selection}}{Integer vector mapping the features of
+          the training and test sets to the original data sets.}
     \item{\code{fold}}{The fold that was used to split the data.}
 }
 }
@@ -147,6 +147,7 @@ x.processed <- pre_split(x, y=NULL) \%>\%
 Christofer \enc{Bäcklin}{Backlin}
 }
 \seealso{
-\code{\link{emil}}, \code{\link{pre_impute_knn}}
+\code{\link{pre_factor_to_logical}}, \code{\link{emil}},
+  \code{\link{pre_impute_knn}}
 }
 
