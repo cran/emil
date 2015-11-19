@@ -25,8 +25,6 @@ Nothing, produces a plot.
 Class specific extension to \code{\link{image}}.
 }
 \examples{
-image(resample("holdout", 60, test_fraction=1/3, nfold=20))
-
 y <- gl(2, 30)
 image(resample("crossvalidation", y, nfold=3, nrepeat=8), col=y)
 }

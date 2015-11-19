@@ -35,7 +35,7 @@ produce models on the smallest training sets, please use
 \examples{
 options(emil_max_indent=3)
 lc <- learning_curve(c(Linear="lda", Quadratic="qda"),
-                     iris[-5], iris$Species, test_fraction=7:2/10)
+                     iris[-5], iris$Species, test_fraction=7:3/10)
 plot(lc)
 }
 \author{
