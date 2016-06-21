@@ -2,8 +2,8 @@ Encoding: UTF-8
 Package: emil
 Type: Package
 Title: Evaluation of Modeling without Information Leakage
-Version: 2.2.3
-Date: 2015-11-11
+Version: 2.2.6
+Date: 2016-06-20
 Authors@R: c(
     person("Christofer", "Backlin", role = c("aut", "cre"), email = "emil@christofer.backlin.se"),
     person("Mats", "Gustafsson", role = "aut")
@@ -17,7 +17,7 @@ Description: A toolbox for designing and evaluating predictive models with
     problem, be it classification, regression or survival analysis, that is
     easy to extend and adapt to your specific setting. Some commonly used
     methods for classification, regression and survival analysis are included.
-Imports: data.table, dplyr, ggplot2 (>= 1.0.1), graphics, grDevices,
+Imports: data.table, dplyr, ggplot2 (>= 2.0.0), graphics, grDevices,
         lazyeval, magrittr, methods, Rcpp (>= 0.12.1), stats, tidyr,
         utils
 Suggests: caret, cmprsk, e1071, glmnet, Hmisc, MASS, parallel, party,
@@ -27,9 +27,10 @@ LinkingTo: Rcpp
 License: GPL (>= 2)
 LazyLoad: yes
 LazyData: yes
-URL: http://molmed.github.io/emil
+URL: https://github.com/Molmed/emil
 BugReports: https://github.com/Molmed/emil/issues
+RoxygenNote: 5.0.1
 NeedsCompilation: yes
-Packaged: 2015-11-12 11:39:28 UTC; christofer
+Packaged: 2016-06-20 22:27:01 UTC; christofer
 Repository: CRAN
-Date/Publication: 2015-11-19 23:24:39
+Date/Publication: 2016-06-21 07:48:48
