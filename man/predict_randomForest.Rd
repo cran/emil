@@ -28,11 +28,10 @@ When used for regression, a list with the element:
 \description{
 Prediction using random forest.
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}, \code{\link{fit_randomForest}},
   \code{\link{importance_randomForest}}, \code{\link{modeling_procedure}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

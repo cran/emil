@@ -20,4 +20,3 @@ requirements.
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

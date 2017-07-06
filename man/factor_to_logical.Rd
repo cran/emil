@@ -63,4 +63,3 @@ tie_break[tie_status$Deuce]
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

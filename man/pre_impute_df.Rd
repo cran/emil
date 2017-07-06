@@ -36,4 +36,3 @@ data <- pre_split(x, y, fold) \%>\%
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

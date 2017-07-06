@@ -19,4 +19,3 @@ Fit a naive Bayes classifier
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

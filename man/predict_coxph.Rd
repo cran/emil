@@ -16,10 +16,9 @@ predict_coxph(object, x, ...)
 \description{
 Predict using Cox proportional hazards model
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{fit_coxph}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

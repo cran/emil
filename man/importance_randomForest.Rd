@@ -25,11 +25,10 @@ An prediction vector with elements corresponding to variables.
 \description{
 Feature importance of random forest.
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}, \code{\link{fit_randomForest}},
   \code{\link{predict_randomForest}}, \code{\link{modeling_procedure}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

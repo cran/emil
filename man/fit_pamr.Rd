@@ -49,11 +49,10 @@ Wrapped version of the \pkg{pamr} package implementation. Note that
 this function uses internal cross-validation for determining the value
 of the shrinkage threshold.
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}, \code{\link{predict_pamr}},
   \code{\link{importance_pamr}}, \code{\link{modeling_procedure}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

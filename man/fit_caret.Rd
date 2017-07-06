@@ -19,4 +19,3 @@ Fit a model using the \pkg{caret} package
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

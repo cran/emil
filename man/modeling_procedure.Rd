@@ -85,12 +85,11 @@ if(requireNamespace("caret", quitely = TRUE)){
 }
 
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}, \code{\link{evaluate}},
   \code{\link{fit}}, \code{\link{tune}},
   \code{\link[=predict.model]{predict}}, \code{\link{get_importance}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

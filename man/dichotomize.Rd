@@ -31,10 +31,9 @@ observations with events occurring after \code{time} will be labelled as
 observations censored before \code{time} will be considered as missing
 information.
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{Surv}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

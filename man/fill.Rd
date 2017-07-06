@@ -34,4 +34,3 @@ na_fill(c(1,2,NA,4,5), 3)
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

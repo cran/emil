@@ -21,4 +21,3 @@ Predict using a fitted decision tree
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

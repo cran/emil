@@ -3,12 +3,9 @@
 \name{select}
 \alias{select}
 \alias{select_.list}
-\alias{select_.modeling_result}
 \title{\pkg{emil} and \pkg{dplyr} integration}
 \usage{
 \method{select_}{list}(.data, ..., .dots)
-
-\method{select_}{modeling_result}(.data, ..., .dots)
 }
 \arguments{
 \item{.data}{Modeling results, as returned by \code{\link{evaluate}}.}
@@ -75,10 +72,9 @@ result \%>\%
     select(fold = cv, "nsc", "prediction", probability = function(x) x$probability[,2]) \%>\%
     spread(fold, probability)
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 subtree
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

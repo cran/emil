@@ -33,10 +33,9 @@ if(requireNamespace("cmprsk", quitely = TRUE)){
 
 }
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{pvalue}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

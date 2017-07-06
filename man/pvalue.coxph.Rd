@@ -23,10 +23,9 @@ p-value.
 \description{
 Based on \code{\link{summary.coxph}}.
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{pvalue}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

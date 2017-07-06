@@ -27,4 +27,3 @@ Plot Surv vector
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

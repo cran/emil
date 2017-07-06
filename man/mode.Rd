@@ -44,4 +44,3 @@ mode(x, na.rm=FALSE)
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

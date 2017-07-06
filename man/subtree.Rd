@@ -105,11 +105,10 @@ ggplot(imp, aes(x=Species, y=Importance)) +
     geom_boxplot() + facet_wrap(~feature)
 
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{select}}, \code{\link{get_prediction}},
   \code{\link{get_importance}}, \code{\link{get_tuning}}.
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

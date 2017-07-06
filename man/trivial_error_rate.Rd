@@ -17,4 +17,3 @@ what error rate such a strategy would result in.
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

@@ -22,10 +22,9 @@ An integer vector of row indexes.
 \description{
 Convert a fold to row indexes of fittdng or test set
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}, \code{\link{resample}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

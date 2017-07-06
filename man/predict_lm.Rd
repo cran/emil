@@ -22,11 +22,10 @@ A list with elements:
 \description{
 Prediction using linear model
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}, \code{\link{fit_lm}},
   \code{\link{modeling_procedure}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

@@ -24,4 +24,3 @@ Plot results from learning curve analysis
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

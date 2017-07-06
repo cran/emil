@@ -18,4 +18,3 @@ Detect if modeling results contains multiple procedures
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

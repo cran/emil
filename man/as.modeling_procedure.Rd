@@ -23,4 +23,3 @@ as.modeling_procedure("lda")
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

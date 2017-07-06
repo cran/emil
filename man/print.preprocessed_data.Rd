@@ -20,4 +20,3 @@ Print method for pre-processed data
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

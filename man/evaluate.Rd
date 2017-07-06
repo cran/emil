@@ -93,10 +93,9 @@ result <- parLapply(cl, cv, function(fold)
     evaluate("lda", x, y, resample=fold))
 
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}, \code{\link{modeling_procedure}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

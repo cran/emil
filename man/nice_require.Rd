@@ -25,4 +25,3 @@ nice_require("base", "is required to do anything at all")
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

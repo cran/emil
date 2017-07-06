@@ -23,11 +23,10 @@ The predicted chance of survival.
 \description{
 Prediction function for models fitted with \code{\link{fit_cforest}}.
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}, \code{\link{fit_cforest}},
   \code{\link{modeling_procedure}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

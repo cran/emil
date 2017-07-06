@@ -25,4 +25,3 @@ is_blank(NULL)
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

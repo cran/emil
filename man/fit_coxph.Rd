@@ -35,10 +35,9 @@ if(requireNamespace("survival")){
 
 }
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{predict_coxph}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

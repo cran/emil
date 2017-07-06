@@ -25,4 +25,3 @@ Fit a support vector machine
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

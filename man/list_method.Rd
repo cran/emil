@@ -22,4 +22,3 @@ list_method()
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

@@ -26,4 +26,3 @@ Check if an object contains more than one unique value
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

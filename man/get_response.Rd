@@ -25,4 +25,3 @@ identical(iris$Sepal.Length, get_response(iris, Sepal.Length ~ .))
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

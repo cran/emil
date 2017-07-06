@@ -23,11 +23,10 @@ A list with elements:
 \description{
 Wrapper for the \pkg{MASS} package implementation.
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}, \code{\link{fit_lda}},
   \code{\link{modeling_procedure}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

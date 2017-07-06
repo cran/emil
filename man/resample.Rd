@@ -2,9 +2,9 @@
 % Please edit documentation in R/resampling.r
 \name{resample}
 \alias{resample}
-\alias{resample_bootstrap}
-\alias{resample_crossvalidation}
 \alias{resample_holdout}
+\alias{resample_crossvalidation}
+\alias{resample_bootstrap}
 \title{Resampling schemes}
 \usage{
 resample(method, y, ..., subset = TRUE)
@@ -95,11 +95,10 @@ y <- factor(runif(60) >= .5)
 cv <- resample("crossvalidation", y)
 image(cv, main="Cross-validation scheme")
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}, \code{\link{subresample}},
   \code{\link{image.resample}}, \code{\link{index_fit}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

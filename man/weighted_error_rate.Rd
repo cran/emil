@@ -29,4 +29,3 @@ it will be given a higher misclassification cost).
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

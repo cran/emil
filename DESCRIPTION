@@ -2,8 +2,8 @@ Encoding: UTF-8
 Package: emil
 Type: Package
 Title: Evaluation of Modeling without Information Leakage
-Version: 2.2.6
-Date: 2016-06-20
+Version: 2.2.8
+Date: 2017-07-06
 Authors@R: c(
     person("Christofer", "Backlin", role = c("aut", "cre"), email = "emil@christofer.backlin.se"),
     person("Mats", "Gustafsson", role = "aut")
@@ -29,8 +29,8 @@ LazyLoad: yes
 LazyData: yes
 URL: https://github.com/Molmed/emil
 BugReports: https://github.com/Molmed/emil/issues
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1
 NeedsCompilation: yes
-Packaged: 2016-06-20 22:27:01 UTC; christofer
+Packaged: 2017-07-06 00:00:43 UTC; christofer
 Repository: CRAN
-Date/Publication: 2016-06-21 07:48:48
+Date/Publication: 2017-07-06 05:03:44 UTC

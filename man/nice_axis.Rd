@@ -25,4 +25,3 @@ Plots an axis the way an axis should be plotted.
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

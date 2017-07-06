@@ -2,8 +2,8 @@
 % Please edit documentation in R/glmnet.r
 \name{importance_glmnet}
 \alias{importance_glmnet}
-\alias{importance_lasso}
 \alias{importance_ridge_regression}
+\alias{importance_lasso}
 \title{Feature importance extractor for elastic net models}
 \usage{
 importance_glmnet(object, s, ...)
@@ -26,11 +26,10 @@ A feature imortance data frame.
 \description{
 Feature importance extractor for elastic net models
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}, \code{\link{fit_glmnet}},
   \code{\link{predict_glmnet}}, \code{\link{modeling_procedure}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

@@ -39,4 +39,3 @@ data$fit$x
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

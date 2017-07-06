@@ -2,8 +2,8 @@
 % Please edit documentation in R/glmnet.r
 \name{fit_glmnet}
 \alias{fit_glmnet}
-\alias{fit_lasso}
 \alias{fit_ridge_regression}
+\alias{fit_lasso}
 \title{Fit elastic net, LASSO or ridge regression model}
 \usage{
 fit_glmnet(x, y, family, nfolds, foldid, alpha = 1, lambda = NULL, ...)
@@ -45,11 +45,10 @@ on. The shrinkage, controlled by the \code{lambda} parameter, can be left
 unspecified for internal tuning (works the same way as
 \code{\link{fit_glmnet}}).
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}, \code{\link{predict_glmnet}},
   \code{\link{importance_glmnet}}, \code{\link{modeling_procedure}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

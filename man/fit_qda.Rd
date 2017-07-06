@@ -19,11 +19,10 @@ Fitted QDA.
 \description{
 Wrapper for the \pkg{MASS} package implementation.
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}, \code{\link{predict_qda}},
   \code{\link{modeling_procedure}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

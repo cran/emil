@@ -19,10 +19,9 @@ p-value.
 \description{
 This is also known as Gray's test.
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{pvalue}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

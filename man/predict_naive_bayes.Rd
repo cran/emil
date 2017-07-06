@@ -14,10 +14,9 @@ predict_naive_bayes(object, x)
 \description{
 Predict using naive Bayes model
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link[e1071:predict.svm]{predict}}.
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

@@ -2,8 +2,8 @@
 % Please edit documentation in R/imputation.r
 \name{pre_impute}
 \alias{pre_impute}
-\alias{pre_impute_mean}
 \alias{pre_impute_median}
+\alias{pre_impute_mean}
 \title{Basic imputation}
 \usage{
 pre_impute(data, fun, ...)
@@ -31,4 +31,3 @@ but only contains missing values in a small number of columns.
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

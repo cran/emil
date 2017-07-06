@@ -18,10 +18,9 @@ The same data set as inputted. This only purpose of this function is
 \description{
 Print log message during pre-processing
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{pre_process}}, \code{\link{log_message}}.
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

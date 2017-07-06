@@ -21,4 +21,3 @@ Increase indentation
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

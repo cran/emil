@@ -42,4 +42,3 @@ evaluate(modeling_procedure("lda"), x = x, y = iris$Species,
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

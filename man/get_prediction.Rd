@@ -28,4 +28,3 @@ Extract predictions from modeling results
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

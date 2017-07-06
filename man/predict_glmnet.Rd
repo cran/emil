@@ -2,8 +2,8 @@
 % Please edit documentation in R/glmnet.r
 \name{predict_glmnet}
 \alias{predict_glmnet}
-\alias{predict_lasso}
 \alias{predict_ridge_regression}
+\alias{predict_lasso}
 \title{Predict using generalized linear model with elastic net regularization}
 \usage{
 predict_glmnet(object, x, s, ...)
@@ -35,11 +35,10 @@ A list with a subset of the following elements:
 Due to the way \code{\link[glmnet]{glmnet}} is implemented, the regularization alpha
 can not be modified after the model is fitted.
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}, \code{\link{fit_glmnet}},
   \code{\link{importance_glmnet}}, \code{\link{modeling_procedure}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

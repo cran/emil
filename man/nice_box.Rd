@@ -20,4 +20,3 @@ Plots a box around a plot
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

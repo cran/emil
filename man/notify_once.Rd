@@ -31,4 +31,3 @@ keeps track of which have already been shown.
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

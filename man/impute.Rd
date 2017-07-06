@@ -36,11 +36,10 @@ x[sample(length(x), 5)] <- NA
 impute_knn(x)
 impute_median(x)
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}, \code{\link{pre_process}},
   \code{\link{pre_impute_knn}}, \code{\link{pre_impute_median}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

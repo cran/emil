@@ -37,10 +37,9 @@ result <- evaluate("pamr", iris[-5], iris$Species, resample=cv,
                    .save=c(importance=TRUE))
 get_importance(result)
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

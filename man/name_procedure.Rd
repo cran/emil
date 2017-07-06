@@ -18,4 +18,3 @@ Get names for modeling procedures
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

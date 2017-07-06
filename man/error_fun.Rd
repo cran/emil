@@ -3,10 +3,10 @@
 \name{error_fun}
 \alias{error_fun}
 \alias{error_rate}
-\alias{mse}
 \alias{neg_auc}
-\alias{neg_harrell_c}
 \alias{rmse}
+\alias{mse}
+\alias{neg_harrell_c}
 \title{Performance estimation functions}
 \usage{
 error_rate(truth, prediction, allow_rejection = !missing(rejection_cost),
@@ -63,11 +63,10 @@ experience the event of interest, to be compared to the actual outcome that
 it did occur or has not yet occurred at a specific time point.
 See \code{\link{neg_harrell_c}} for an example of the latter.
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}, \code{\link{neg_gmpa}},
   \code{\link{modeling_procedure}}, \code{\link{extension}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

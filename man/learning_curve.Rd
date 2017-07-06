@@ -38,11 +38,10 @@ lc <- learning_curve(c(Linear="lda", Quadratic="qda"),
                      iris[-5], iris$Species, test_fraction=c(.7, .5, .3))
 plot(lc)
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \references{
 Richard O Duda, Peter E Hart, and David G Stork. Pattern
   Classification. Wiley, 2nd edition, 2000. ISBN 978-0-471-05669-0.
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

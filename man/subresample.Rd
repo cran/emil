@@ -25,10 +25,9 @@ them to generate the subscheme.
 cv <- resample("holdout", y=1:12, test_fraction=1/4, nfold=3)
 inner.cv <- subresample(cv, y=1:12)
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}, \code{\link{resample}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

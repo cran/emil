@@ -22,9 +22,6 @@ sizes are very different, small classes tend to be overlooked when tuning
 parameters by optimizing error rate. Blagus and Lusa (2013) suggested to
 remedy the problem by using this performance measure instead.
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \references{
 Blagus, R., & Lusa, L. (2013).
 \emph{Improved shrunken centroid classifiers for high-dimensional class-imbalanced data.}
@@ -34,4 +31,6 @@ doi:10.1186/1471-2105-14-64
 \seealso{
 \code{\link{error_fun}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

@@ -20,11 +20,10 @@ p-value.
 These calculations are written in such a way that they avoid rounding off errors
 that plague the \pkg{survival} and \pkg{cmprsk} packages.
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{pvalue.crr}}, \code{\link{pvalue.survdiff}},
   \code{\link{pvalue.cuminc}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

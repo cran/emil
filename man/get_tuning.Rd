@@ -31,4 +31,3 @@ get_tuning(result)
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

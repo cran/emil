@@ -21,4 +21,3 @@ Extract prediction performance
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

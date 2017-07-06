@@ -25,10 +25,9 @@ then reformats the result to satisfy PAMR.
 \code{pre_pamr} must be run last if chained with other pre-processing
 functions, since it substantially reshapes the data.
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}, \code{\link{pre_process}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

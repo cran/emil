@@ -25,12 +25,11 @@ Predict the response of unknown observations
 mod <- fit("lda", x=iris[-5], y=iris$Species)
 prediction <- predict(mod, iris[-5])
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}, \code{\link{modeling_procedure}},
   \code{\link{evaluate}},\code{\link{fit}}, \code{\link{tune}},
   \code{\link{get_importance}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

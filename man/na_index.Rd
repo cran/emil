@@ -29,4 +29,3 @@ na_index(sets)
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

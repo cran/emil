@@ -30,12 +30,11 @@ untuned parameters they will automatically be tuned prior to fitting.
 \examples{
 mod <- fit("lda", x=iris[-5], y=iris$Species)
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}, \code{\link{modeling_procedure}},
   \code{\link{evaluate}}, \code{\link{tune}},
   \code{\link[=predict.model]{predict}}, \code{\link{get_importance}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

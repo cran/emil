@@ -21,11 +21,10 @@ Fitted linear model.
 \description{
 Based on \code{\link{lm}}.
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}, \code{\link{predict_lm}},
   \code{\link{modeling_procedure}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

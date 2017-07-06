@@ -28,11 +28,10 @@ class-wise shrunken centroid (which is the same for both classes except sign).
 In case multiple thresholds give the same error the largest one is chosen
 (i.e. the one keeping the fewest features).
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}, \code{\link{fit_pamr}},
   \code{\link{predict_pamr}}, \code{\link{modeling_procedure}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

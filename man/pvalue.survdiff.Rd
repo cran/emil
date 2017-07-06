@@ -30,10 +30,9 @@ if(requireNamespace("survival", quitely = TRUE)){
 \description{
 Extracts p-value from a logrank test
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{pvalue}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

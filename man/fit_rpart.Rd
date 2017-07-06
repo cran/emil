@@ -22,4 +22,3 @@ Fit a decision tree
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

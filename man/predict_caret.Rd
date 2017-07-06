@@ -21,4 +21,3 @@ work for a particular method, the user will need to rewrite it.
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

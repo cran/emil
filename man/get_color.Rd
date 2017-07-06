@@ -43,4 +43,3 @@ or to generate a palette for a response vector.
 \author{
 Christofer \enc{Bäcklin}{Backlin}
 }
-

@@ -20,11 +20,10 @@ Fitted random forest.
 Directly calling the \pkg{randomForest} package implementation. See
 \code{\link[randomForest]{randomForest}} for parameter specification.
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}, \code{\link{predict_randomForest}},
   \code{\link{importance_randomForest}}, \code{\link{modeling_procedure}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}

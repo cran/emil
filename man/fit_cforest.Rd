@@ -33,11 +33,10 @@ as the default values are chosen for technical reasons, not predictive
 performance!
 Pay special attention to \code{mtry} which is set very low by default.
 }
-\author{
-Christofer \enc{Bäcklin}{Backlin}
-}
 \seealso{
 \code{\link{emil}}, \code{\link{predict_cforest}},
   \code{\link{modeling_procedure}}
 }
-
+\author{
+Christofer \enc{Bäcklin}{Backlin}
+}
