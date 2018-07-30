@@ -27,6 +27,12 @@ pvalue <- function(x, log_p=FALSE, ...) UseMethod("pvalue")
 #' @return p-value.
 #' @seealso \code{\link{pvalue}}
 #' @author Christofer \enc{Bäcklin}{Backlin}
+#' @references Andersen, P. and Gill, R. (1982). Cox's regression model for
+#'   counting processes, a large sample study. \emph{Annals of Statistics}
+#'   10, 1100-1120.
+#'
+#'   Therneau, T., Grambsch, P., Modeling Survival Data: Extending the
+#'   Cox Model.  Springer-Verlag, 2000.
 #' @export
 pvalue.coxph <- function(x, log_p=FALSE, test=c("logrank", "wald", "likelihood"), ...){
     test <- match.arg(test)
@@ -159,10 +165,12 @@ Surv_event_types <- function(x){
     if(mstat) attr(x, "states") else c("no event", "event")
 }
 
-#' Plot Surv vector
+#' Plot Surv vector [DEPRECATED]
 #'
-#' @method plot Surv
-#' @param x \code{\link{Surv}} vector.
+#' Package \pkg{survival} includes an official plot function as of version
+#' 2.42-5. This will therefore be removed in the next major update.
+#'
+#' @param x \code{\link[survival]{Surv}} vector.
 #' @param y Y-values.
 #' @param segments Whether to draw horizontal segments.
 #' @param flip Flip the plot to show time on y.
@@ -172,7 +180,9 @@ Surv_event_types <- function(x){
 #' @author Christofer \enc{Bäcklin}{Backlin}
 #' @importFrom graphics legend points
 #' @export
-plot.Surv <- function(x, y, segments=TRUE, flip=FALSE, legendpos="topright", ...){
+plot_Surv <- function(x, y, segments=TRUE, flip=FALSE, legendpos="topright", ...){
+    message("`plot_Surv` is deprecated, please use the regular `plot` function (now dispatching to `surivival:::plot.Surv`")
+
     if(missing(y)) y <- 1:length(x)
 
     if(flip){
